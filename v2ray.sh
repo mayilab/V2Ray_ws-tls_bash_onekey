@@ -378,9 +378,9 @@ NoNewPrivileges=true
 Environment=V2RAY_LOCATION_ASSET=/usr/local/lib/v2ray/
 ExecStart=/usr/local/bin/v2ray -config /etc/v2ray/config.json
 Restart=on-failure
-DefaultLimitCORE=infinity
-DefaultLimitNOFILE=102400
-DefaultLimitNPROC=102400
+LimitCORE=infinity
+LimitNOFILE=102400
+LimitNPROC=102400
 [Install]
 WantedBy=multi-user.target
 EOF
